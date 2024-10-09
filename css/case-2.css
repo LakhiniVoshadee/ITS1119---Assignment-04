@@ -1,38 +1,33 @@
 body {
   margin: 0;
-}
-
-.container {
   height: 100vh;
-  background-color: rgb(53, 53, 224);
+  width: 100vw;
+  background-color: #1d4ee2;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
-
 .circle {
   width: 450px;
   height: 450px;
   border-radius: 50%;
   background-color: gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: solid 20px rgb(255, 254, 254);
+  border-top: solid 20px red;
+  cursor: pointer;
 }
 
 span {
   color: white;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: sans-serif;
   font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.border {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.circle:hover {
+  transition: transform 2s ease;
+  transform: rotate(360deg);
 }

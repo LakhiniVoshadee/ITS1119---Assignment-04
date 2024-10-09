@@ -12,39 +12,31 @@ body {
 
 .menu-bar {
   height: 65px;
-  width: 80px;
+  width: 300px;
   padding-right: 18px;
-  transition: width 1s ease;
+  transition: left 1s ease-in-out;
   display: flex;
   justify-content: space-between;
   background-color: blueviolet;
   align-items: center;
   box-shadow: 0 4px 10px rgb(44, 44, 44);
+  position: relative;
+  left: -250px;
 }
 
 img {
-  height: 50px;
-  width: 50px;
-  margin-left: 8px;
+  height: 45px;
+  width: 45px;
 }
 
 .menu-bar:hover {
-  width: 300px;
-  transition-duration: 2s;
-  color: white;
-  font-weight: bold;
-}
-
-.menu-bar:hover img {
-  justify-content: end;
+  left: 0;
 }
 
 .menu-name {
-  opacity: 0;
   font-family: sans-serif;
   font-weight: bold;
-}
-
-.menu-bar:hover .menu-name {
-  opacity: 1;
+  margin-left: 30px;
+  font-size: 1.5rem;
+  color: white;
 }
