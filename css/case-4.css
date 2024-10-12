@@ -9,7 +9,7 @@ body {
 
 .drop {
   border-radius: 50%;
-  border: 2px solid red;
+  border: 3px solid red;
   animation: dropping 4s ease-in infinite;
 }
 
