@@ -2,4 +2,5 @@ body {
   background-image: url(/assets/images/sky.jpg);
   width: 100vw;
   height: 100vh;
+  margin: 0;
 }
